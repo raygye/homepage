@@ -1,5 +1,9 @@
 .icon {
     width: 50px;
+    transition: width 0.2s;
+}
+.icon:hover {
+    width: 100px;
 }
 li {
     display: inline;
