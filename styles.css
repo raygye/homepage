@@ -1,6 +1,10 @@
+.icon {
+    width: 20px;
+}
 li {
     display: inline;
     float: right;
+    padding: 10px;
 }
 ul {
     list-style-type: none;
