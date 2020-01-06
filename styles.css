@@ -21,7 +21,7 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 .text {
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     color: blueviolet;
     font-size: 24px;
 }
