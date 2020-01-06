@@ -1,4 +1,29 @@
+@keyframes bioSlide {
+    from {
+        left: 700px;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes headSlide {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 50px;
+    }
+}
+@keyframes navSlide {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
 .content {
+    position: relative;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,6 +37,8 @@
     width: 100px;
 }
 .nav {
+    animation-name: navSlide;
+    animation-duration: 1.5s;
     position: static;
     margin-top: -10px;
     margin-left: -10px;
@@ -20,9 +47,14 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 .text {
-    font-family: Verdana, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: blueviolet;
     font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a {
+    color: blueviolet;
 }
 body {
     width: 100%;
@@ -43,17 +75,23 @@ ul {
     padding-right: 10px;
 }
 #bio {
+    animation-name: bioSlide;
+    animation-duration: 1.5s;
     position: relative;
     top: 30px;
     height: inherit;
     width: 700px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 0;
+}
+#bio.hover {
+    width: 800px;
 }
 #headshot {
+    animation-name: headSlide;
+    animation-duration: 1.5s;
     width: 500px;
     position: relative;
+    height: inherit;
     top: 50px;
     left: 50px;
-    z-index: -1;
 }
