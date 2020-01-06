@@ -13,13 +13,20 @@
 }
 .nav {
     position: static;
+    margin-top: -10px;
+    margin-left: -10px;
     width: 100%;
     display: inline-block;
-    padding: 0;
-    margin: 0;
+    padding-left: 0;
     background-color: rgba(255, 255, 255, 0.5);
 }
+.text {
+    font-family: Verdana;
+    color: blueviolet;
+    font-size: 24px;
+}
 body {
+    width: 100%;
     background: url(imgs/mountain.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -36,13 +43,13 @@ ul {
     padding-right: 10px;
 }
 #bio {
-    height: 100px;
-    width: inherit;
+    position: relative;
+    top: 30px;
+    height: inherit;
+    width: 700px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0;
     margin: 0;
-    position: relative;
-    right: 10px;
 }
 #headshot {
     width: 500px;
@@ -50,11 +57,4 @@ ul {
     top: 50px;
     left: 50px;
     z-index: -1;
-}
-#name {
-    font-family: Verdana;
-    color: blueviolet;
-    font-size: 40px;
-    position: relative;
-    text-align: center;
 }
