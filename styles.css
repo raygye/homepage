@@ -1,3 +1,9 @@
+.content {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 .icon {
     width: 50px;
     transition: width 0.2s;
@@ -6,15 +12,19 @@
     width: 100px;
 }
 .nav {
-    position: fixed;
+    position: static;
     width: 100%;
     display: inline-block;
+    padding: 0;
+    margin: 0;
     background-color: rgba(255, 255, 255, 0.5);
 }
 body {
-    background-image: url("imgs/mountain.jpg");
-    background-size: 1800px;
-    background-position: 50px 950px;
+    background: url(imgs/mountain.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 li {
     float: right;
@@ -25,16 +35,25 @@ ul {
     list-style-type: none;
     padding-right: 10px;
 }
+#bio {
+    height: 100px;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 10px;
+}
 #headshot {
     width: 500px;
     position: relative;
-    top: 150px;
+    top: 50px;
     left: 50px;
     z-index: -1;
 }
 #name {
     font-family: Verdana;
-    color: cornflowerblue;
+    color: blueviolet;
     font-size: 40px;
     position: relative;
     text-align: center;
