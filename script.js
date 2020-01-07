@@ -6,8 +6,6 @@ document.getElementById("mail").onmouseout = function() {
         document.getElementById("mailText").innerHTML = "Click to copy my email to your clipboard";
 }
 document.getElementById("mail").onclick = function() {
-    let mail = document.getElementById("invis");
-    mail.select();
-    document.execCommand("copy");
+    navigator.clipboard.writeText("r22ye@uwaterloo.ca");
     document.getElementById("mailText").innerHTML = "Copied!";
 }
