@@ -39,7 +39,7 @@
 .nav {
     animation-name: navSlide;
     animation-duration: 1.5s;
-    position: static;
+    position: relative;
     margin-top: -10px;
     margin-left: -10px;
     width: 100%;
@@ -91,4 +91,12 @@ ul {
     height: inherit;
     top: 50px;
     left: 50px;
+}
+#mailText {
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 85px;
+    right: 110px;
+    font-size: 16px;
+    color: #228b22;
 }

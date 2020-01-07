@@ -10,10 +10,19 @@
     <div class="nav">
         <ul>
             <li class="text" style="float: left; padding: 0;">raygye.ga</li>
-            <li><img class ="icon" src="media/email-icon-107.png" alt="email" title="r22ye@uwaterloo.ca"></li>
+            <li><img class ="icon" id="mail" src="media/email-icon-107.png" alt="email" title="r22ye@uwaterloo.ca"></li>
             <li><a href="https://github.com/raygye/"><img class="icon" src="media/github.png" alt="github" title="Github"></a></li>
-            <li><a href="https://www.linkedin.com/in/raygye/"><img class = "icon" src="media/linkedIn.png" alt="Linkedin" title="Linkedin"></a></li>
+            <li><a href="https://www.linkedin.com/in/raygye/"><img class="icon" src="media/linkedIn.png" alt="Linkedin" title="Linkedin"></a></li>
         </ul>
+        <div class="text" id="mailText" style="opacity: 0">r22ye@uwaterloo.ca</div>
+        <script>
+            document.getElementById("mail").onmouseover = function() {
+                document.getElementById("mailText").style.opacity = "1";
+            }
+            document.getElementById("mail").onmouseout = function() {
+                document.getElementById("mailText").style.opacity = "0";
+            }
+        </script>
     </div>
     <div class="content">
         <img id="headshot" src="media/headshot.png" alt="headshot">
