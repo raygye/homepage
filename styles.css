@@ -8,7 +8,7 @@
 }
 @keyframes headSlide {
     from {
-        left: -500px;
+        left: -1000px;
     }
     to {
         left: 50px;
@@ -91,6 +91,10 @@ ul {
     height: inherit;
     top: 50px;
     left: 50px;
+}
+#invis {
+    position: absolute;
+    right: -1000px;
 }
 #mailText {
     transition: opacity 0.2s;
