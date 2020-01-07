@@ -99,6 +99,12 @@ ul {
     top: 50px;
     left: 50px;
 }
+#invis {
+    position: absolute;
+    right: -1000px;
+    user-select: none;
+    color: transparent;
+}
 #mailText {
     transition: opacity 0.2s;
     position: absolute;
