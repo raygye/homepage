@@ -7,7 +7,9 @@ document.getElementById("mail").onmouseout = function() {
 };
 document.getElementById("mail").onclick = function() {
     let mail = document.getElementById("invis");
+    mail.style.visibility = "visible";
     mail.select();
     document.execCommand("copy");
+    mail.style.visibility = "hidden";
     document.getElementById("mailText").innerHTML = "Copied!";
 };
